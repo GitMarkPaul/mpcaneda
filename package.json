@@ -1,5 +1,5 @@
 {
-  "name": "vite-bundler",
+  "name": "mpcaneda",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,9 +7,9 @@
   "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run deploy",
-    "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Mark Paul Caneda",
   "license": "ISC",
