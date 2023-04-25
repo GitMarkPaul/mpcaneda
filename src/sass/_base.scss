@@ -1,11 +1,81 @@
-body {
-    background-color: var(--color-dark);
-    color: var(--color-dark-contrast);
-    font-size: 1rem;
-    margin: 0;
-    overflow-x: hidden;
+* {
+    box-sizing: border-box;
 }
 
-a {
-    color: var(--color-dark-contrast);
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);;
+    border: 3px solid #0a192f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-primary-contrast);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary-contrast);
+}
+
+a, p, div, span, li {
+    color: var(--color-secondary);
+}
+
+p {
+    font-size: 1rem;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: grayscale(0);
+    }
+}
+
+img {
+    filter: brightness(.8) contrast(1.2);
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+// Hover Scale
+.hover-scale-1 {
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        cursor: pointer;
+    }
+}
+
+.logo-md {
+    background-color: rgba(var(--color-card-rgb), 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: left;
 }

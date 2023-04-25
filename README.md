@@ -29,11 +29,11 @@ npm install
 Start the server 
 
 ```bash
-$ npm run dev
+npm run dev
 ```
 
 Build Process
 
 ```bash
-$ npm run build
+npm run build
 ```

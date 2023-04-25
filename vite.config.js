@@ -21,6 +21,11 @@ function minifyHtml() {
 
 export default defineConfig({
     base: '',
+    resolve: {
+        alias: {
+            '~bootstrap': resolve(__dirname, 'node_modules/bootstrap'),
+        }
+    },
     plugins: [
         minifyHtml(),
     ],
@@ -31,7 +36,7 @@ export default defineConfig({
         brotliSize: true,
         rollupOptions: {
             input: {
-                app: 'public/js/app.js',
+                app: 'src/js/app.js',
                 index: resolve(__dirname, 'index.html'),
                 about: resolve(__dirname, 'about.html'),
             },
