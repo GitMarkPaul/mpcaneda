@@ -38,7 +38,7 @@ export default defineConfig({
             input: {
                 app: 'src/js/app.js',
                 index: resolve(__dirname, 'index.html'),
-                about: resolve(__dirname, 'about.html'),
+                googlecfa065f4e1d877ec: resolve(__dirname, 'googlecfa065f4e1d877ec.html'),
             },
             output: {
                 dir: 'dist',
