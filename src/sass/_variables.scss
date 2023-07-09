@@ -1,11 +1,11 @@
 :root {
     // Primary 
-	--color-primary: #242628;
-	--color-primary-rgb: 36,38,40;
+	--color-primary: #1da1f2;
+	--color-primary-rgb: 29,161,242;
 	--color-primary-contrast: #ffffff;
 	--color-primary-contrast-rgb: 255,255,255;
-	--color-primary-shade: #202123;
-	--color-primary-tint: #3a3c3e;
+	--color-primary-shade: #1a8ed5;
+	--color-primary-tint: #34aaf3;
 
     // Secondary
     --color-secondary: #8892b0;
@@ -15,21 +15,21 @@
 	--color-secondary-shade: #78809b;
 	--color-secondary-tint: #949db8;
 
-	// Success
-	--color-success: #659728;
-	--color-success-rgb: 101,151,40;
-	--color-success-contrast: #ffffff;
-	--color-success-contrast-rgb: 255,255,255;
-	--color-success-shade: #598523;
-	--color-success-tint: #74a13e;
+	// Dark
+	--color-dark: #000000;
+	--color-dark-rgb: 0,0,0;
+	--color-dark-contrast: #ffffff;
+	--color-dark-contrast-rgb: 255,255,255;
+	--color-dark-shade: #000000;
+	--color-dark-tint: #1a1a1a;
 
 	// Card
-	--color-card: #181b20;
-	--color-card-rgb: 24,27,32;
+	--color-card: #14212f;
+	--color-card-rgb: 20,33,47;
 	--color-card-contrast: #ffffff;
 	--color-card-contrast-rgb: 255,255,255;
-	--color-card-shade: #15181c;
-	--color-card-tint: #2f3236;
+	--color-card-shade: #121d29;
+	--color-card-tint: #2c3744;
 
     // Font
     --font-family: 'Inter', sans-serif;
