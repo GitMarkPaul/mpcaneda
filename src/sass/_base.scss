@@ -88,3 +88,9 @@ p {
     height: 100px;
     object-fit: contain;
 }
+
+@include breakpoint("sm") {
+    .flex-direction-sm-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
