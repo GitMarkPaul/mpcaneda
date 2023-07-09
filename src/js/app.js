@@ -1,4 +1,11 @@
 import * as Turbo from "@hotwired/turbo";
+
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+
+// import styles bundle
+import 'swiper/css/bundle';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
@@ -37,4 +44,34 @@ document.addEventListener("turbo:load", () => {
             }
         });
     }
+
+    // init Swiper:
+    new Swiper('.swiper-tech-stack', {
+        slidesPerView: 8,
+        spaceBetween: 10,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 8,
+                spaceBetween: 10
+            }
+        },
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        grabCursor: true,
+    });
 });

@@ -23,14 +23,71 @@
 	--color-dark-shade: #000000;
 	--color-dark-tint: #1a1a1a;
 
+	// Medium
+	--color-medium: #97a2b5;
+	--color-medium-rgb: 151,162,181;
+	--color-medium-contrast: #000000;
+	--color-medium-contrast-rgb: 0,0,0;
+	--color-medium-shade: #858f9f;
+	--color-medium-tint: #a1abbc;
+
+	// Light
+	--color-light: #ffffff;
+	--color-light-rgb: 255,255,255;
+	--color-light-contrast: #000000;
+	--color-light-contrast-rgb: 0,0,0;
+	--color-light-shade: #e0e0e0;
+	--color-light-tint: #f7f7f7;
+
 	// Card
-	--color-card: #14212f;
-	--color-card-rgb: 20,33,47;
-	--color-card-contrast: #ffffff;
-	--color-card-contrast-rgb: 255,255,255;
-	--color-card-shade: #121d29;
-	--color-card-tint: #2c3744;
+	--color-card: #ffffff;
+	--color-card-rgb: 255,255,255;
+	--color-card-contrast: #000000;
+	--color-card-contrast-rgb: 0,0,0;
+	--color-card-shade: #e0e0e0;
+	--color-card-tint: #f7f7f7;
 
     // Font
     --font-family: 'Inter', sans-serif;
+}
+
+@media(prefers-color-scheme: dark) {
+	body {
+		--color-dark: #d4d4d4;
+		--color-dark-rgb: 212,212,212;
+		--color-dark-contrast: #000000;
+		--color-dark-contrast-rgb: 0,0,0;
+		--color-dark-shade: #bbbbbb;
+		--color-dark-tint: #d8d8d8;
+
+		--color-light: #000000;
+		--color-light-rgb: 0,0,0;
+		--color-light-contrast: #ffffff;
+		--color-light-contrast-rgb: 255,255,255;
+		--color-light-shade: #000000;
+		--color-light-tint: #1a1a1a;
+
+		--color-card: #14212f;
+		--color-card-rgb: 20,33,47;
+		--color-card-contrast: #ffffff;
+		--color-card-contrast-rgb: 255,255,255;
+		--color-card-shade: #121d29;
+		--color-card-tint: #2c3744;
+
+		header .navigation-wrapper .brand-img {
+			filter: brightness(0) invert(1);
+		}
+
+		img {
+			filter: brightness(.7) contrast(1.2);
+		}
+
+		.btn-close, .accordion-button::after, .footer-logo, .sidebar-logo {
+			filter: brightness(0) invert(0.9);
+		}
+	}
+}
+
+.swiper-tech-stack {
+	overflow: hidden;
 }
