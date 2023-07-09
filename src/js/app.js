@@ -52,12 +52,12 @@ document.addEventListener("turbo:load", () => {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 10
             },
             // when window width is >= 480px
             480: {
-                slidesPerView: 3,
+                slidesPerView: 5,
                 spaceBetween: 10
             },
             // when window width is >= 640px
@@ -71,6 +71,10 @@ document.addEventListener("turbo:load", () => {
         loop: true,
         autoplay: {
             delay: 5000,
+        },
+        freeMode: {
+            enabled: true,
+            sticky: true,
         },
         grabCursor: true,
     });
