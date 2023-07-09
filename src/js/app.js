@@ -1,4 +1,8 @@
 import * as Turbo from "@hotwired/turbo";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+AOS.init();
 
 document.addEventListener("turbo:load", () => {
     // Get the current scroll position of the page
