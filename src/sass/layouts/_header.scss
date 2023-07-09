@@ -39,7 +39,7 @@ header {
             gap: 4rem;
             align-items: center;
 
-            @include breakpoint("lg") {
+            @include breakpoint("md") {
                 display: none;
             }
 
